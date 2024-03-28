@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Roboto:wght@100&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --font-color-one: #fff; /* white */
+  --font-color-two: #5e0bf0;
+  --font-color-three: #f0960b;
+  --font-color-four: #06f606; /*footer BMD font branding */
+  --font-color-five: #06f689; /*footer BMD font HOVER */
+  --font-color-six: #000; /* black */
+  --sponser-back: #121312;
+}
+
+/*
+
+All sections of this page use the same container class's making it very 
+easy to swap things around, change colors, fonts, font sizes etc.
+
+*/
+
+/* global */
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.content_title {
+  font-size: 2rem;
+  color: var(--font-color-three);
+}
+
+.content_words {
+  font-size: 1.5rem;
+  color: var(--font-color-two);
+}
+
+.section_title {
+  font-size: 3rem;
+  color: var(--font-color-three);
+}
+
+.orange_button {
+  background: var(--font-color-three);
+  color: black;
+  font-family: "roboto", sans-serif;
+  font-size: 2rem;
+  font-weight: bolder;
+  padding: 5px 20px;
+  border: 1px solid black;
+  border-radius: 30px;
+  transform: scale(1);
+  transition: 0.6s;
+}
+
+.orange_button:hover {
+  transform: scale(0.93);
+}
+
+#demo {
+    color: var(--font-color-three);
+}
+
+.card-header {
+    color: var(--font-color-three);
+    font-size: 2.2rem;
+
+}
+
+.card-title {
+    color: var(--font-color-two);
+    font-size: 2rem;
+}
+
+.card-text {
+    color: var(--font-color-three)
+}
+
+body {
+  background: black;
+}
+
+/* navbar */
+
+.navbar-brand {
+  color: var(--font-color-three);
+}
+
+.nav-link {
+  color: var(--font-color-two);
+}
+
+
+/* page title */
+
+#main-container {
+    padding-top: 5vh;
+}
+
+.carousel {
+  height: 70vh;
+  margin-bottom: 5vh;
+}
+
+.carousel-inner,
+.carousel-item {
+  height: 100%;
+  width: 100%;
+  background: black;
+}
+
+.carousel-item img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+/* about section */
+
+#about_section {
+  background: black;
+  margin: 10vh 0;
+}
+
+#about_left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about_card {
+    width: 75%;
+}
+
+#about_header {
+    color: var(--font-color-two);
+}
+
+.lum-guy-frame {
+  height: 40vh;
+  width: auto;
+  
+}
+
+@keyframes rock {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-5deg);
+  }
+  75% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.lum-guy-frame img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  animation: rock 3s ease-in-out infinite;
+}
+
+/*gallery */
+
+#gallery_section h1 {
+  margin-bottom: 5vh;
+}
+
+#video_section {
+  min-height: 30vh;
+  margin: 10vh 0;
+}
+
+#video_card {
+    width: 75%;
+}
+
+.video_frame {
+  height: 300px;
+  width: 300px;
+  border: #06f606 solid 2px;
+  border-radius: 150px;
+  overflow: hidden;
+}
+
+.video_frame img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+/* Sponser Section */
+
+@media (max-width: 1000px) {
+    #about_card {
+        width: 95%;
+        margin-bottom: 3vh;
+    }
+    .video_frame {
+        margin-top: 5vh;
+    }
+    #video_card {
+        width: 95%;
+    }
+    
+}
+
+@media (max-width: 700px) {
+  #hero h1 {
+    font-size: 2.5rem;
+  }
+  .lum-guy-frame {
+    margin: 5vh 0;
+  }
+  .video_frame {
+    height: 200px;
+    width: 200px;
+  }
+}
+
+@media (max-width: 600px) {
+  #hero h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 500px) {
+  #hero h1 {
+    font-size: 1.5rem;
+  }
+}
+
+#sponser_title {
+  font-size: 3rem;
+}
