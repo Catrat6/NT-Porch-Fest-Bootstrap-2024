@@ -13,6 +13,7 @@
   --font-color-four: #06f606; /*footer BMD font branding */
   --font-color-five: #06f689; /*footer BMD font HOVER */
   --font-color-six: #000; /* black */
+  --neon-sign-border: #E706FA;
   --sponser-back: #121312;
 }
 
@@ -116,7 +117,8 @@ body {
 .carousel-item img {
   height: 100%;
   width: 100%;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 /* about section */
@@ -146,6 +148,23 @@ body {
   
 }
 
+
+@-webkit-keyframes rock {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-5deg);
+  }
+  75% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+
 @keyframes rock {
   0% {
     transform: rotate(0deg);
@@ -164,8 +183,10 @@ body {
 .lum-guy-frame img {
   height: 100%;
   width: 100%;
-  object-fit: contain;
-  animation: rock 3s ease-in-out infinite;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -webkit-animation: rock 3s ease-in-out infinite;
+          animation: rock 3s ease-in-out infinite;
 }
 
 /*gallery */
@@ -194,10 +215,83 @@ body {
 .video_frame img {
   height: 100%;
   width: 100%;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 /* Sponser Section */
+
+#sponsers {
+  margin-bottom: 3vh;
+
+}
+
+#sponser_card_section {
+  margin-bottom: 3vh;
+}
+
+#sponser_card {
+  width: 50%;
+  border: 1px solid var(--font-color-three);
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3vh;
+
+}
+
+.card_frame {
+  height: 80%;
+  width: 80%;
+  border: 3px solid var(--neon-sign-border);
+  border-radius: 180px;
+  overflow: hidden;
+  margin: 2vh;
+}
+
+.card_frame img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+#panhandler_photo_col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.panhandler_frame {
+  height: 60%;
+  width: 60%;
+  border: 2px solid var(--font-color-three);
+  overflow: hidden;
+}
+
+.panhandler_frame img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+#bottom_support_row {
+  margin-bottom: 5vh;
+}
+
+@media (max-width: 1800px) {
+  #sponser_card {
+    width: 70%;
+  }
+}
+
+@media (max-width: 1400px) {
+  #sponser_card {
+    width: 80%;
+  }
+}
 
 @media (max-width: 1000px) {
     #about_card {
@@ -209,6 +303,13 @@ body {
     }
     #video_card {
         width: 95%;
+    }
+    #sponser_card {
+      width: 70%;
+    }
+    .card_frame {
+      height: 60%;
+      width: 60%;
     }
     
 }
