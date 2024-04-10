@@ -281,6 +281,63 @@ body {
   margin-bottom: 5vh;
 }
 
+#Footer {
+  background-color: var(--sponser-back);
+  min-height: 20;
+}
+
+
+.brand_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 100%;
+  width: 100%;
+  padding-left: 3vw;
+
+}
+
+.brand_title {
+  font-size: 2rem;
+  color: var(--neon-sign-border);
+  margin-bottom: 1vh;
+}
+
+.brand_title a {
+  text-decoration: none;
+  color: var(--font-color-four);
+}
+
+#sub-mes {
+  color: var(--neon-sign-border);
+}
+
+.brand_box ul {
+  list-style-type: none;
+  padding: 0;
+  
+}
+
+.brand_box ul li {
+  margin-bottom: 1vh;
+  
+}
+
+.brand_box ul li a {
+  color: var(--font-color-three);
+  text-decoration: none;
+  font-size: 1.2rem;
+
+}
+
+.brand_box ul li a i {
+  color: var(--font-color-two);
+  font-size: 1.5rem;
+  margin-right: 1vw;
+}
+
+
 @media (max-width: 1800px) {
   #sponser_card {
     width: 70%;
