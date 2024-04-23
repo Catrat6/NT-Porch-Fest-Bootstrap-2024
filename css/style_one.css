@@ -184,10 +184,30 @@ body {
     animation: rock 3s ease-in-out infinite;
 }
 
+/*nt watch*/
+
+#NT-watch {
+    min-height: 60vh;
+}
+
+.nt-watch-frame {
+    height: 65%;
+    width: 65%;
+    border: 3px solid var(--font-color-three);
+    overflow: none;
+}
+
+.nt-watch-frame img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
 /*gallery */
 
 #gallery_section h1 {
-    margin-bottom: 5vh;
+   margin-bottom: 1vh;
 }
 
 #video_section {
@@ -354,6 +374,9 @@ body {
         height: 60%;
         width: 60%;
     }
+    .nt-watch-frame {
+        width: 95%;
+    }
 }
 
 @media (max-width: 700px) {
@@ -367,6 +390,7 @@ body {
         height: 200px;
         width: 200px;
     }
+  
 }
 
 @media (max-width: 600px) {
