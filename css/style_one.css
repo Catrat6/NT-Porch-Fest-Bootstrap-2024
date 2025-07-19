@@ -234,6 +234,34 @@ body {
     object-fit: contain;
 }
 
+#matts_music_section {
+    min-height: 40vh;
+}
+
+.matts_magic_frame {
+    height: 90%;
+    width: 40%;
+    background: var(--neon-sign-border);
+    border: 3px solid var(--font-color-three);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.matts_magic_frame img {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: contain;
+    object-fit: contain;
+}
+
+#matts_music_col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* Sponser Section */
 
 #sponsers {
@@ -368,7 +396,7 @@ body {
         width: 95%;
     }
     #sponser_card {
-        width: 70%;
+        width: 85%;
     }
     .card_frame {
         height: 60%;
@@ -376,6 +404,11 @@ body {
     }
     .nt-watch-frame {
         width: 95%;
+    }
+    .matts_magic_frame {
+        height: 100%;
+        width: 50%;
+        margin-bottom: 10vh;
     }
 }
 
@@ -390,6 +423,7 @@ body {
         height: 200px;
         width: 200px;
     }
+    
   
 }
 
